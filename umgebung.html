@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aktivitäten & Umgebung – Ferienhof Kiene</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Aktivitäten rund um den Ferienhof Kiene: Strand, Radfahren, Ausflugsziele für Familien und mehr." />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Ferienhof Kiene
+        <span>Urlaub an der Ostsee</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü öffnen">☰</button>
+      <nav class="main-nav">
+        <a href="index.html">Start</a>
+        <a href="ferienwohnung1.html">FeWo Hofblick</a>
+        <a href="ferienwohnung2.html">FeWo Rübenberg EG</a>
+        <a href="ferienwohnung3.html">FeWo Rübenberg OG</a>
+        <a href="umgebung.html" class="is-active">Aktivitäten</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="hero-eyebrow">In der Umgebung</div>
+          <h1>Was Sie rund um den Ferienhof erleben können</h1>
+          <p>
+            Ob aktiv in der Natur oder entspannt im Café nebenan – rund um den Ferienhof
+            Kiene gibt es viel zu entdecken.
+          </p>
+
+          <div class="chip-row">
+            <span class="chip">Strand</span>
+            <span class="chip">Radfahren</span>
+            <span class="chip">Familienausflüge</span>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-main">
+            <img src="img/ausfluege.jpeg" alt="Landschaft rund um den Ferienhof" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Draußen unterwegs</div>
+          <h2 class="section-title">Natur &amp; Bewegung</h2>
+        </div>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Wanderwege ab Hof</h3>
+            <p>
+              Mehrere gut ausgeschilderte Rundwege beginnen direkt am Hof – von der
+              kurzen Abendrunde bis zur Tagestour.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Radfahren &amp; E-Bike</h3>
+            <p>
+              Gut ausgebaute Radwege, leichte Steigungen und herrliche Ausblicke –
+              ideal für Genussradler und Familien.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Badesee in der Nähe</h3>
+            <p>
+              Ein idyllischer Badesee mit Liegewiese und Kiosk ist in wenigen
+              Autominuten erreichbar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Für Familien</div>
+          <h2 class="section-title">Ausflugsziele mit Kindern</h2>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Tierpark / Wildgehege</h3>
+            <p>
+              Streichelzoo, Spielplatz und viele heimische Tiere – ein beliebtes
+              Ziel für unsere kleinen Gäste.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Erlebnisbad</h3>
+            <p>
+              Rutschen, Kinderbecken und Saunabereich – perfekt für Schlechtwettertage.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Stadtbummel</h3>
+            <p>
+              Die nahegelegene Stadt bietet ein historisches Zentrum, Eisdielen
+              und kleine Läden zum Stöbern.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="jahr"></span> Ferienhof Kiene</div>
+      <div class="footer-nav">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const yearEl = document.getElementById("jahr");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
+  </script>
+  <script src="assets/script.js"></script>
+</body>
+</html>

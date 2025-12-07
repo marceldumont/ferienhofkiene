@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>FeWo Hofblick – Ferienhof Kiene</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ferienwohnung Apfelgarten auf dem Ferienhof Sonnental – ideal für Familien mit Balkon zum Obstgarten." />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Ferienhof Kiene
+        <span>Urlaub auf dem Land</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü öffnen">☰</button>
+      <nav class="main-nav">
+        <a href="index.html">Start</a>
+        <a href="ferienwohnung1.html">FeWo Hofblick</a>
+        <a href="ferienwohnung2.html" class="is-active">FeWo Rübenberg EG</a>
+        <a href="ferienwohnung3.html">FeWo Rübenberg OG</a>
+        <a href="umgebung.html">Aktivitäten</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="hero-eyebrow">Ferienwohnung</div>
+          <h1>FeWo Rübenberg EG</h1>
+          <p>
+            Freundliche, helle Wohnung mit Balkon und Blick auf unseren Hof –
+            ideal für Familien.
+          </p>
+          <div class="badge-row">
+            <div class="badge">ca. 55 m²</div>
+            <div class="badge">2–4 Personen</div>
+            <div class="badge">Balkon</div>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-main">
+            <img src="img/fewo2.jpeg" alt="Wohnzimmer der Ferienwohnung Apfelgarten" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div>
+          <div class="section-header">
+            <div class="section-kicker">Ausstattung</div>
+            <h2 class="section-title">Gemütlich &amp; praktisch</h2>
+          </div>
+
+          <ul class="feature-list">
+            <li>Schlafzimmer mit Doppelbett</li>
+            <li>Kinderzimmer mit Etagenbett (optional auch als Einzelbetten)</li>
+            <li>Wohnküche mit Esstisch und Sofa</li>
+            <li>Voll ausgestattete Küche (Herd, Backofen, Spülmaschine, Kühlschrank)</li>
+            <li>Badezimmer mit Dusche/WC</li>
+            <li>Smart-TV und kostenloses WLAN</li>
+            <li>Balkon mit Sitzgelegenheit und Blick in den Obstgarten</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Gut zu wissen</h3>
+          <ul class="feature-list">
+            <li>Bettwäsche und Handtücher inklusive</li>
+            <li>Kinderstuhl und Kinderbett auf Anfrage</li>
+            <li>Keine Haustiere in dieser Wohnung</li>
+            <li>Nichtraucherwohnung</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div>
+          <div class="section-header">
+            <div class="section-kicker">Preise</div>
+            <h2 class="section-title">Preise &amp; Saisonzeiten</h2>
+          </div>
+          <p><strong>Grundpreis (2 Personen):</strong> ab XX,– € pro Nacht</p>
+          <p><strong>Jede weitere Person:</strong> ab XX,– € pro Nacht</p>
+          <p><strong>Endreinigung:</strong> XX,– € (einmalig)</p>
+          <p><strong>Mindestaufenthalt:</strong> z.B. 3 Nächte (in der Hauptsaison ggf. länger)</p>
+          <p class="section-subtitle">
+            Konkrete Preise und Angebote stimmen wir gern individuell mit Ihnen ab.
+          </p>
+        </div>
+        <div>
+          <h3>Buchungsanfrage</h3>
+          <p>
+            Schreiben Sie uns eine E-Mail mit dem gewünschten Zeitraum und der Personenzahl
+            oder rufen Sie uns direkt an:
+          </p>
+          <p>
+            E-Mail: <a href="mailto:info@ferienhof-sonnental.de">info@ferienhof-sonnental.de</a><br />
+            Telefon: <a href="tel:+49123456789">+49 (0)1234 56789</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="jahr"></span> Ferienhof Kiene</div>
+      <div class="footer-nav">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const yearEl = document.getElementById("jahr");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
+  </script>
+  <script src="assets/script.js"></script>
+</body>
+</html>

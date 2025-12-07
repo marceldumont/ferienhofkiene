@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Impressum – Ferienhof Kiene</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Ferienhof Kiene
+        <span>Urlaub an der Ostsee</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü öffnen">☰</button>
+      <nav class="main-nav">
+        <a href="index.html">Start</a>
+        <a href="ferienwohnung1.html">FeWo Hofblick</a>
+        <a href="ferienwohnung2.html">FeWo Rübenberg EG</a>
+        <a href="ferienwohnung3.html">FeWo Rübenberg OG</a>
+        <a href="umgebung.html">Aktivitäten</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Impressum</h1>
+      <p><strong>Angaben gemäß § 5 TMG</strong></p>
+
+      <p>
+        Ferienhof Kiene<br />
+        Ursula Kiene<br />
+        Alte Dorfstraße 31<br />
+        24321 Behrensdorf
+      </p>
+
+      <p>
+        Telefon: +49 (0)1234 56789<br />
+        E-Mail: info@highlanderhof.de
+      </p>
+
+      <p><strong>Umsatzsteuer-ID:</strong><br />
+      Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE123456789
+      </p>
+
+      <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br />
+        Max Mustermann, Anschrift wie oben
+      </p>
+
+      <h2>Haftung für Inhalte</h2>
+      <p>
+        Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
+        Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+      </p>
+
+      <h2>Haftung für Links</h2>
+      <p>
+        Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.
+        Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+      </p>
+
+      <h2>Urheberrecht</h2>
+      <p>
+        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
+        Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+      </p>
+
+      <p style="font-size: 0.85rem; color: #777; margin-top: 2rem;">
+        Hinweis: Dieses Impressum ist ein Muster und sollte von einer fachkundigen Stelle geprüft werden.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="jahr"></span> Ferienhof Kiene</div>
+      <div class="footer-nav">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const yearEl = document.getElementById("jahr");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
+  </script>
+  <script src="assets/script.js"></script>
+</body>
+</html>

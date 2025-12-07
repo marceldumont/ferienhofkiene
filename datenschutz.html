@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Datenschutzerklärung – Ferienhof Sonnental</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Ferienhof Kiene
+        <span>Urlaub aan der Ostsee</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menü öffnen">☰</button>
+      <nav class="main-nav">
+        <a href="index.html">Start</a>
+        <a href="ferienwohnung1.html">FeWo Hofblick</a>
+        <a href="ferienwohnung2.html">FeWo Rübenberg EG</a>
+        <a href="ferienwohnung3.html">FeWo Rübenberg OG</a>
+        <a href="umgebung.html">Aktivitäten</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Datenschutzerklärung</h1>
+
+      <p>
+        Der Schutz Ihrer persönlichen Daten ist uns wichtig. Wir behandeln Ihre personenbezogenen Daten vertraulich
+        und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+      </p>
+
+      <h2>1. Verantwortliche Stelle</h2>
+      <p>
+        Ferienhof Sonnental<br />
+        Familie Muster<br />
+        Sonnenweg 1<br />
+        12345 Musterhausen<br />
+        E-Mail: info@ferienhof-sonnental.de
+      </p>
+
+      <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
+      <p>
+        Beim Besuch unserer Website werden automatisch Informationen allgemeiner Natur erfasst (z.B. IP-Adresse,
+        verwendeter Browser, Datum und Uhrzeit des Zugriffs). Diese Daten sind nicht bestimmten Personen zuordenbar.
+      </p>
+
+      <h2>3. Kontakt per E-Mail</h2>
+      <p>
+        Wenn Sie uns per E-Mail Anfragen zukommen lassen, werden Ihre Angaben aus der E-Mail inklusive der von Ihnen
+        dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
+        Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+      </p>
+
+      <h2>4. Cookies</h2>
+      <p>
+        Unsere Website verwendet derzeit keine Tracking-Cookies. Technisch notwendige Cookies können eingesetzt werden,
+        um bestimmte Funktionen der Website zu ermöglichen. Sie können Ihren Browser so einstellen, dass Sie über das
+        Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben.
+      </p>
+
+      <h2>5. Ihre Rechte</h2>
+      <p>
+        Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten,
+        deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ggf. ein Recht auf Berichtigung,
+        Sperrung oder Löschung dieser Daten.
+      </p>
+
+      <h2>6. Server-Log-Dateien</h2>
+      <p>
+        Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien,
+        die Ihr Browser automatisch an uns übermittelt. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+      </p>
+
+      <p style="font-size: 0.85rem; color: #777; margin-top: 2rem;">
+        Hinweis: Diese Datenschutzerklärung ist ein Muster und muss an Ihre konkrete Website
+        (z.B. verwendete Dienste, Cookies, Analyse-Tools) angepasst werden.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="jahr"></span> Ferienhof Kiene</div>
+      <div class="footer-nav">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const yearEl = document.getElementById("jahr");
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
+  </script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
